@@ -1,0 +1,544 @@
+:root {
+    --color-default: #ff9301;
+    --color-nadpisy: #0b0b15;
+    --color-text: #555555;
+    --color-ramecky-form: #bbbbbb;
+    --color-oddelovace: #eeeeee;
+    --color-pozadi: #f7f7ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 2em 4vw 0;
+    margin-bottom: 1.5em;
+}
+
+p {
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+.intro  {
+    padding: 2em 1em;
+}
+
+.header-des {
+    font-size: 0.9em;
+    font-weight: 500;
+    
+}
+
+.heading__prolog {
+    font-weight: 500;
+    
+}
+
+.heading__me__name {
+    font-size: 6em;
+    font-weight: 900;
+    margin: 0;
+}
+
+.heading__me__job {
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0;
+    color:  var(--color-default);
+}
+
+
+
+.what-i-do__articles__card {
+    background-color: white;
+    margin: 1em;
+    border-radius: 1em;
+    padding: 1em 2em;
+    overflow: hidden;
+    height: calc(42vh - 4.5em);
+
+   
+    
+
+}
+
+.what-i-do__articles__card__icon {
+    background-color: var(--color-default);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    position: relative;
+    top: -5.7em;
+    left: -4.5em;
+    
+}
+
+.what-i-do__articles__card__icon > svg {
+    width: 5em;
+    margin: 4em;
+    position: relative;
+    top: 2em;
+    left: 0.5em;
+}
+
+.what-i-do {
+    padding: 1em 5em;
+}
+
+.what-i-do__articles {
+    display: flex;
+}
+
+.what-i-do__articles__card__text {
+    position: relative;
+    top: -4.5em;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+.awards__card {
+    border: 1px solid black;
+}
+
+.awards__card__des {
+    margin-left: 1em;
+}
+
+.experience__card {
+    margin: 1em 0;
+}
+
+.experience__card__des span {
+    display: block;
+}
+
+.intro {
+    text-align: center;
+}
+
+.biography__text {
+    text-align: left;
+    border: 1px wave black;
+}
+
+
+
+
+.seskupeni {
+    background-color: var(--color-pozadi);
+}
+
+.contacting__item {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.contacting__adress__text, .contacting__mail__text, .contacting__mobile__text {
+    margin-left: 1em;
+}
+
+.contacting__adress__state {
+    display: block;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos > * {
+    margin: 0.5em;
+    color: #0b0b15;
+}
+
+.logos > *:hover {
+    cursor: pointer;
+    color: #555555;
+}
+
+.intro {
+    background-color: var(--color-pozadi);
+    max-width: 100%;
+    
+}
+
+
+/*  SMALL DEVICE  */
+@media (max-width: 559px) {
+    .navigation__list {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0;
+        align-items: center;
+        justify-items: stretch;
+        gap: 1em;
+    }
+
+    .navigation__list__item {
+        list-style: none;
+        border-radius: 0.3em;
+        background-color: var(--color-default);
+        font-size: 0.9em;
+        font-weight: 500;
+        padding: 0.7em 0.5em;
+        text-align: center;
+    }
+
+    .navigation__list__item:hover {
+        cursor: pointer;
+    }
+
+    .navigation__list__item > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .profile__avatar {
+        
+    }
+
+    .profile__avatar__img {
+        border-radius: 50%;
+        background-color: var(--color-default);
+        width: 50%;
+    }
+
+    .profile__des__name {
+        font-weight: 900;
+        font-size: 2em;
+        margin-bottom: 0;
+        color: var(--color-nadpisy);
+    }
+
+    .profile__des__job {
+        margin-top: 0.5em;
+        color: var(--color-default);
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .biography {
+        margin-top: 3em;
+    }
+
+    .biography__heading {
+        text-align: left;
+        color: var(--color-nadpisy);
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-bottom: 0em;
+    }
+
+    .biography__text {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+
+    .what-i-do__articles {
+        flex-wrap: wrap;
+    }
+
+    .what-i-do {
+        padding: 0;
+    }
+
+   .portfolio__grid {
+    background-color: green;
+    
+   }
+
+   .portfolio__grid article {
+    border: 1px solid black;
+    width: 95%;
+    display: block;
+    margin: 1em auto;
+   }
+
+   .portfolio__grid__img {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: auto;
+   }
+
+   .awards__card {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+   }
+
+   .experience {
+    margin: 1em;
+   }
+
+   .experience > * {
+    border: 1px solid black;
+   }
+
+  
+
+   .form-layout > * {
+    display: grid;
+    padding: 1em;
+    margin: 1em;
+    width: 90%;
+   }
+
+   textarea {
+    resize: vertical;
+   }
+
+   .form-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em auto;
+   }
+
+   .form__inputs__button {
+    width: 25%;
+    margin-left: 1em;
+    padding: 0.7em;
+   }
+}
+
+/*  MEDIUM DEVICE  */
+@media (min-width: 560px) {
+
+    .navigation__list {
+        display: flex;
+        padding: 0;
+    }
+
+    .navigation__list__item {
+        list-style: none;
+        padding: 0.5em;
+    }
+
+    .navigation__list__item > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .what-i-do__articles {
+        flex-wrap: wrap;
+    }
+
+    .what-i-do {
+        padding: 1em;
+    }
+
+    .portfolio__grid {
+        background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       }
+
+    .portfolio__grid article {
+        margin: 1em;
+    }
+
+    .portfolio__grid__img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .awards__cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .awards__card {
+        padding: 2em 1em;
+        margin: 1em;
+        width: 20%;
+    }
+
+    .trophy, .awards__card__des {
+        text-align: center;
+    }
+
+    .awards__card__des {
+        margin-left: 0;
+    }
+
+    .experience__card {
+        display: flex;
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid black;
+    }
+
+    .experience__card__des {
+        margin-right: 2em;
+        padding-right: 2em;
+        align-self: center;
+    }
+
+    
+    .experience__card__des__working {
+        width: max-content;
+    }
+   
+    .form-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "name email"
+        "subject subject"
+        "text text";
+    }
+
+    .form__inputs__name {
+        grid-area: name;
+        
+    }
+
+    .form__inputs__email {
+        grid-area: email;
+    }
+
+    .form__inputs__subject {
+        grid-area: subject;
+    }
+
+    .form__inputs__text {
+        grid-area: text;
+    }
+
+    .form__inputs {
+        margin: 1em;
+    }
+
+    .form-layout > * {
+        margin: 1em;
+    }
+
+    .form__inputs__button {
+        margin: 1em;
+        padding: 0.5em 0.8em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/*  LARGE DEVICE  */
+@media (min-width: 960px) {
+
+    .intro {
+        margin: 1em;
+        display: flex;
+    }
+
+    
+   
+    .biography {
+        margin: 0 2em;
+    }
+
+    .what-i-do {
+        padding: 1em;
+    }
+    .what-i-do__articles {
+        flex-wrap: nowrap;
+    }
+   
+
+    .portfolio__grid {
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .awards__card {
+       width: 25%;
+    }
+
+    .experience__card__des > span {
+        width: max-content;
+    }
+
+    .contact-layout {
+        display: flex;
+        margin: 1em;
+        align-items: center;
+    }
+
+    .contact-layout__adress, .form {
+        max-width: 50vw;
+    }
+
+    .form__nadpis {
+        margin-left: 1.5em;
+
+    }
+}
+
+/*  EXTRA LARGE DEVICE  */
+@media (min-width: 1200px) {
+
+    .intro {
+        margin: 4vw;
+        padding: 4vw;
+    }
+
+
+    .navigation {
+        margin: 0 4vw;
+        padding: 0 4vw;
+    }
+
+    .what-i-do {
+
+        padding: 1em 7em;
+    }
+    .what-i-do__articles {
+        flex-wrap: nowrap;
+    }
+    
+    .portfolio__grid {
+        background-color: hotpink;
+        padding: 0 4vw;
+        margin: 0 4vw;
+    }
+
+    .awards__card {
+        width: auto;
+        padding: 1em 5em;
+    }
+
+    .awards__cards {
+        background-color: blue;
+        margin: 4vw;
+    
+    }
+
+    .experience {
+        margin: 4vw;
+        padding: 4vw;
+    }
+
+    .contact {
+        margin: 4vw;
+    }
+}
+
+
+
